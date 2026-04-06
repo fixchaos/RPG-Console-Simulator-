@@ -85,9 +85,36 @@ public class RPGMenuSimulator {
                     break;
 
                 case 2:
-                    System.out.println("\nEntrenamiento próximamente...");
-                    break;
+                    if (!personajeCreado) {
+                        System.out.println("\nNo se ha creado un personaje aún...");
+                        break;
+                    }
+                    System.out.println("=== ENTRENAMIENTO ===");
+                    System.out.println("1. Entrenar fuerza");
+                    System.out.println("2. Entrenar resistencia");
+                    System.out.println("3. Volver al menú principal");
 
+                    
+                    //switch moderno para el entrenamiento 
+                    int entrenamientoOpcion = scanner.nextInt();
+                    switch (entrenamientoOpcion) {
+                        case 1 -> {
+                            fuerza += 5;
+                            System.out.println("Has entrenado fuerza. Nueva fuerza: " + fuerza);
+                            break;
+                        }
+                        case 2 -> {
+                            vida += 10;
+                            System.out.println("Has entrenado resistencia. Nueva vida: " + vida);
+                            break;
+                        }
+                        case 3 -> {
+                            System.out.println("Volviendo al menú principal...");
+                            break;
+                        }
+                        default -> System.out.println("Opción inválida");
+                    }
+                    break;
                 case 3:
                     System.out.println("\nBatalla próximamente...");
                     break;
