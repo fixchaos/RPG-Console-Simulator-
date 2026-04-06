@@ -93,26 +93,17 @@ public class RPGMenuSimulator {
                     break;
 
                 case 4:
-                    System.out.println("\n         ⢀⣀⣀⣀⣀⣀⣀⣀⣀⡀⡀             ");
-                    System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠉⠉⠉⠉⠉⠉⠉⠉⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ");
-                    System.out.println("⠀⠀⠀⠀⠀⣾⠀⣿⣿⡿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⢿⣿⣿⠀⢷⠀⠀⠀⠀⠀ ");
-                    System.out.println("⠀⠀⠀⠀⢰⡏⠀⣿⣿⠀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣦⠀⣿⣿⡀⢸⡆⠀⠀⠀⠀ ");
-                    System.out.println("⠀⠀⠀⠀⢸⡇⠀⣿⣿⣆⠘⠻⠇⢠⣤⣤⡄⠸⠟⠋⣠⣿⣿⡇⢸⡇⠀⠀⠀⠀ ");
-                    System.out.println("⠀⠀⠀⠀⢸⣇⠀⣿⣿⣿⣿⣶⣆⣈⣉⣉⣁⣰⣶⣿⣿⣿⣿⠃⢸⡇⠀⠀⠀⠀ ");
-                    System.out.println("⠀⠀⠀⠀⠈⣿⣀⣉⣉⠉⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠉⣉⣉⣀⣿⠀⠀⠀⠀⠀ ");
-                    System.out.println("⢀⡴⠀⣉⣉⠉⠉⠉⠛⠛ INVENTARIO ⠛⠛⠉⠉⠉⣉⣉⠀⢦⡀⠀⠀");
-                    System.out.println("⠀⠀⠈⣀⠀⣿⣿⠀⣿⣿⠀⠛⠛⠉⠉⠉⠉⠛⠛⠀⣿⣿⠀⣿⣿⠀⣀⠁⠀⠀");
+                        System.out.println("\n╔══════════════════════╗");
+                        System.out.println("║     INVENTARIO       ║");
+                        System.out.println("╠══════════════════════╣");
 
                     for (String item : inventario) {
                     System.out.println("║" + item);
                     }
-
-                    System.out.println("⠀⠀⢸⡇⢀⣿⣿⠀⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⠀⣿⣿⡀⢸⡇⠀⠀");
-                    System.out.println("⠀⠀⢸⡇⢸⣿⠀⣤⡤⢤⣄⠘⠻⠿⠿⠿⠿⠟⠃⣠⡤⢤⣤⠀⣿⡇⢸⡇⠀⠀");
-                    System.out.println("⠀⠀⢠⡄⢸⣿⠀⠛⠃⠘⠋⢸⣶⣶⣆⣰⣶⣶⡇⠙⠃⠘⠛⠀⣿⡇⢠⡄⠀⠀");
-                    System.out.println("⠀⠀⢠⡄⠸⣿⣿⠀⠷⠞⠀⠛⠛⠿⠿⠿⠿⠛⠛⠀⠳⠾⠀⣿⣿⠇⢠⡄⠀⠀");
-                    System.out.println("⠀⠀⠘⠗⠀⣿⣿⠀⣶⣶⠀⣿⣷⣶⣶⣶⣶⣾⣿⠀⣶⣶⠀⣿⣿⠀⠺⠃⠀⠀");
-                    System.out.println("⠀⠀⠀⠀⠀⠉⠉⠀⠉⠉⠀⠉⠉⠉⠉⠉⠉⠉⠉⠀⠉⠉⠀⠉⠉⠀⠀⠀⠀⠀");
+                    
+                        System.out.println("╠══════════════════════╣");
+                        System.out.println("║  Total: " + inventario.length + " objetos      ║");
+                        System.out.println("╚══════════════════════╝");
 
                     break;
 
