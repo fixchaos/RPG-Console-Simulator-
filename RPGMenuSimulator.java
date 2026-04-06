@@ -27,7 +27,8 @@ public class RPGMenuSimulator {
             System.out.println("3. Batalla");
             System.out.println("4. Inventario");
             System.out.println("5. Estado del personaje");
-            System.out.println("6. Salir");
+            System.out.println("6. Créditos");
+            System.out.println("7. Salir");
             System.out.print("Seleccione una opción: ");
 
             opcion = scanner.nextInt();
@@ -200,8 +201,13 @@ public class RPGMenuSimulator {
                     System.out.println("Fuerza  : " + fuerza);
                     break;
                     
-
                 case 6:
+                    System.out.println("\n=== CRÉDITOS ===");
+                    System.out.println("Desarrollado por: JAVIERA GODOY - RENATO CAMPOS - DIEGO CASTILLO  - MATIAS CELIS -VICTOR ERAZO");
+                    System.out.println("Inspirado en juegos RPG clásicos");
+                    System.out.println("¡Gracias por jugar!");
+                    break;
+                case 7:
                     System.out.println("Saliendo del juego...");
                     break;
 
@@ -209,7 +215,7 @@ public class RPGMenuSimulator {
                     System.out.println("Opción inválida");
             }
 
-        } while (opcion != 6);
+        } while (opcion != 7);
 
         scanner.close();
     }
